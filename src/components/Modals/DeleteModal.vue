@@ -39,9 +39,13 @@ const deleteUser = () => {
   <ModalWindow v-model="modal" :width="300">
     <!-- Delete form -->
     <div>
+      <!-- Title -->
       <div class="tw-text-center tw-text-xl tw-mb-6">
         Delete Task
       </div>
+      <!--  -->
+
+      <!-- Actions -->
       <div class="tw-flex tw-justify-center">
         <button @click="modal = false" class="tw-px-3 tw-py-1 tw-text-red-500 tw-rounded tw-text-white tw-mr-2">
           Cancel
@@ -50,6 +54,8 @@ const deleteUser = () => {
           Delete
         </button>
       </div>
+      <!--  -->
+
     </div>
     <!--  -->
   </ModalWindow>

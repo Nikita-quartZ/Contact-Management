@@ -86,9 +86,12 @@ const updateUser = () => {
   <ModalWindow v-model="modal">
     <!-- Create form -->
     <form @submit.prevent="saveUser">
+
+      <!-- Title -->
       <div class="tw-text-center tw-text-xl">
         {{ !edit ? 'Create User' : 'Edit User' }}
       </div>
+      <!--  -->
 
       <div class="tw-mb-2">
         <p>
@@ -112,6 +115,7 @@ const updateUser = () => {
           type="text">
       </div>
 
+      <!-- Actions -->
       <div class="tw-flex tw-justify-end">
         <button @click="modal = false" class="tw-px-3 tw-py-1 tw-bg-red-500 tw-rounded tw-text-white tw-mr-2">
           Cancel
@@ -125,6 +129,8 @@ const updateUser = () => {
           Save
         </button>
       </div>
+      <!--  -->
+
     </form>
     <!--  -->
   </ModalWindow>

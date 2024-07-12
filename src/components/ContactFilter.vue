@@ -12,6 +12,7 @@ const filters = defineModel<Filter[]>('filters', {
 <template>
   <div class="tw-w-full">
     <div v-for="filter in filters" :key="filter.label" class="tw-flex tw-justify-between tw-items-end">
+      <!-- Filter Item -->
       <div>
         <p class="tw-text-sm tw-pl-1">
           {{ filter.label }}
@@ -19,6 +20,8 @@ const filters = defineModel<Filter[]>('filters', {
         <input type="text" v-model="filter.value"
           class="tw-border tw-border-gray-500 tw-rounded tw-w-full tw-h-10 tw-px-2">
       </div>
+      <!--  -->
+
       <UserModal />
     </div>
   </div>
