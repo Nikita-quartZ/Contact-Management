@@ -47,7 +47,7 @@ const deleteUser = () => {
 
       <!-- Actions -->
       <div class="tw-flex tw-justify-center">
-        <button @click="modal = false" class="tw-px-3 tw-py-1 tw-text-red-500 tw-rounded tw-text-white tw-mr-2">
+        <button @click="modal = false" class="tw-px-3 tw-py-1 tw-text-red-500 tw-rounded tw-mr-2">
           Cancel
         </button>
         <button @click="deleteUser" class="tw-px-3 tw-py-1 tw-bg-red-500 tw-rounded tw-text-white tw-mr-2">
