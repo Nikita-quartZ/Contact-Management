@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import type { Contact, Filter } from '@/Types/Contact'
+import type { Contact, Filter } from '@/types/Contact'
 
 interface State {
   list: Contact[],
@@ -17,7 +17,7 @@ export const useContactsStore = defineStore({
         let list = JSON.parse(request)
         params.forEach((filter) => {
           if (filter.key)
-            list = list.filter((item) => item[filter.key].includes(filter.value))
+            list = list.filter((item: any) => item[filter.key].includes(filter.value))
         })
         this.list = list;
         return this.list;

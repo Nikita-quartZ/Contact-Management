@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import ModalWindow from '@/components/Modals/ModalWindow.vue'
-import { useContactsStore } from '@/stores/Contacts'
 import type { PropType } from 'vue'
 import type { Contact } from '@/types/Contact'
+import ModalWindow from '@/components/Modals/ModalWindow.vue'
+import { useContactsStore } from '@/stores/Contacts'
 
 // Composable
 const store = useContactsStore()
