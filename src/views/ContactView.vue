@@ -44,11 +44,11 @@ store.getContacts()
       <h2 class="tw-text-3xl tw-mb-6">
         Contact Management
       </h2>
-      <ContactFilter v-model:filters="filters" />
+      <ContactFilter data-test="filters" v-if="filters" v-model:filters="filters" />
     </header>
 
-    <main class="tw-pt-6">
-      <ContactList :contacts="store.list" />
+    <main class="tw-pt-6" v-if="store.list">
+      <ContactList data-test="list"  :contacts="store.list" />
     </main>
   </div>
 </template>

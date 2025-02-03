@@ -74,10 +74,10 @@ const updateUser = () => {
 <template>
   <!-- Modal button -->
   <slot>
-    <button v-if="!edit" @click="openModal" class="tw-px-4 tw-py-2 tw-bg-green-500 tw-rounded tw-text-white">
+    <button data-test="btn" v-if="!edit" @click="openModal" class="tw-px-4 tw-py-2 tw-bg-green-500 tw-rounded tw-text-white">
       Add User
     </button>
-    <button v-else @click="openModal" class="tw-px-4 tw-py-2 tw-bg-blue-500 tw-rounded tw-text-white tw-mr-3">
+    <button data-test="btn" v-else @click="openModal" class="tw-px-4 tw-py-2 tw-bg-blue-500 tw-rounded tw-text-white tw-mr-3">
       Edit
     </button>
   </slot>

@@ -18,7 +18,12 @@ defineProps({
 <template>
   <section>
     <TransitionGroup name="notification">
-      <div v-for="contact in contacts" :key="contact.id" class="tw-flex tw-items-center tw-justify-between tw-mb-3">
+      <div
+        v-for="contact in contacts"
+        :key="contact.id"
+        data-test="items"
+        class="tw-flex tw-items-center tw-justify-between tw-mb-3"
+        >
 
         <!-- User Details -->
         <div class="tw-flex tw-items-center">

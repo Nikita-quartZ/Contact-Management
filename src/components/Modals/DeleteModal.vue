@@ -31,14 +31,14 @@ const deleteUser = () => {
 
 <template>
   <!-- Modal button -->
-  <button @click="modal = true" class="tw-px-4 tw-py-2 tw-bg-red-500 tw-rounded tw-text-white">
+  <button data-test="btn" @click="modal = true" class="tw-px-4 tw-py-2 tw-bg-red-500 tw-rounded tw-text-white">
     Delete
   </button>
   <!--  -->
 
   <ModalWindow v-model="modal" :width="300">
     <!-- Delete form -->
-    <div>
+    <div data-test="model">
       <!-- Title -->
       <div class="tw-text-center tw-text-xl tw-mb-6">
         Delete Task

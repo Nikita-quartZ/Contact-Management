@@ -11,7 +11,11 @@ const filters = defineModel<Filter[]>('filters', {
 
 <template>
   <div class="tw-w-full">
-    <div v-for="filter in filters" :key="filter.label" class="tw-flex tw-justify-between tw-items-end">
+    <div
+      v-for="filter in filters" :key="filter.label"
+      data-test="filter"
+      class="tw-flex tw-justify-between tw-items-end"
+    >
       <!-- Filter Item -->
       <div>
         <p class="tw-text-sm tw-pl-1">

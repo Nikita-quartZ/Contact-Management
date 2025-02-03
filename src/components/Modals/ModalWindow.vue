@@ -13,6 +13,7 @@ defineProps({
 </script>
 
 <template>
+  {{ open }}
   <Teleport to="body">
     <Transition>
       <div
